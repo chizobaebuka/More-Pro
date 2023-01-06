@@ -1,6 +1,11 @@
-const BlogList = () => {
+const BlogList = (props) => {
+// const BlogList = ({ blogs, title}) can also be written this way and would still work perfectly
+    const blogs = props.blogs;
+    const title = props.title;
+
     return ( 
         <div className="blog-list">
+            <h2>{title}</h2>
             {blogs.map((blog)=> (
             <div className="blog-preview" key={blog.id}>
                 <h2>{blog.title}</h2>

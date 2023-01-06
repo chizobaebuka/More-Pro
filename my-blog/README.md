@@ -73,4 +73,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 1. After creating the app using (create-react-app my-blog)
 2. Edit to preference and install the necessary dependencies if needed.
 3. Go to the Navbar.js and use the (sfc) and edit as required 
-4. 
+4. Adding Props to the Bloglist component to be reusable(props are a way to pass data from parent component to a child component)
+To get access to your props in your child component, you need to create a variable and name it accordingly and usings props.varaiblename to be able to get the props running on that particular component. (eg const blogs = props.blogs)
+5. 
