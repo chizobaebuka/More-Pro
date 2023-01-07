@@ -1,7 +1,9 @@
-const BlogList = (props) => {
-// const BlogList = ({ blogs, title}) can also be written this way and would still work perfectly
-    const blogs = props.blogs;
-    const title = props.title;
+const BlogList = ({ blogs, title, handleDelete}) => {
+// const BlogList = (props) can also be written this way and would still work perfectly
+    // const blogs = props.blogs;
+    // const title = props.title;
+    
+
 
     return ( 
         <div className="blog-list">

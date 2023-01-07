@@ -75,4 +75,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 3. Go to the Navbar.js and use the (sfc) and edit as required 
 4. Adding Props to the Bloglist component to be reusable(props are a way to pass data from parent component to a child component)
 To get access to your props in your child component, you need to create a variable and name it accordingly and usings props.varaiblename to be able to get the props running on that particular component. (eg const blogs = props.blogs)
-5. 
+5. Making use of the useEffect hook (a way to run code on every render)
+6. Dependencies of useEffect
+7. 
