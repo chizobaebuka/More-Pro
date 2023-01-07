@@ -1,24 +1,17 @@
 // the useState is used to make any value reactive and has two parameters
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import BlogList from "./BlogList";
+import useFetch from "./usefetch";
 
 const Home = () => {
-    const [blogs, setBlogs] = useState(null);    
-
-    useEffect(() => {
-        fetch('http://localhost:8000/blogs')
-            .then(res => {
-                return res.json();
-            })
-            .then((data) => {
-                setBlogs(data)
-            })
-    }, []);
+    const {data, isLoading, error} = useFetch('http://localhost:8000/blogs')
 
 
     return ( 
         <div className="home">
-           {blogs && <BlogList blogs={blogs} title="All Blogs!" />}
+            {error && <div>{error}</div>}
+            {isLoading && <div>Loading...</div>}
+           {data && <BlogList blogs={data} title="All Blogs!" />}
         </div>
      );
 }

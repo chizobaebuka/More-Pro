@@ -1,4 +1,4 @@
-const BlogList = ({ blogs, title, handleDelete}) => {
+const BlogList = ({ blogs, title }) => {
 // const BlogList = (props) can also be written this way and would still work perfectly
     // const blogs = props.blogs;
     // const title = props.title;
